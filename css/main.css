@@ -1,0 +1,338 @@
+@import url(fonts.css);
+@import url(bootstrap.min.css);
+html, body{
+    overflow-x: hidden;
+}
+.test{
+    height: 100vh;
+    background: white;
+    position: relative;
+}
+body{
+    max-width: 540px;
+    font-family: 'Futura';
+    font-weight: 400;
+    margin: 15px auto 0;
+    overflow-y: clip;
+    background: #00000012;
+}
+header {
+    color: #fcd233;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 5px;
+    font-family: 'DRUK';
+    font-weight: 700;
+}
+.my-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+textarea {
+    width: 90%;
+    outline: unset;
+    border: unset;
+    background: burlywood;
+    padding: 7px 15px;
+    resize: none;
+}
+/* .executors {
+    padding: 25px 0 0;
+}
+.executors-blocks {
+    width: 95%;
+    padding-right: 5%;
+    padding-top: 10px;
+    height: 88vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    display: none;
+    opacity: 0;
+    transition: .5s all;
+}
+.executors-blocks.active{
+    display: block;
+}
+.executors-blocks.visible{
+    opacity: 1;
+}
+.executors-block {
+    margin-bottom: 20px;
+}
+.executors-img {
+    height: 160px;
+}
+.executors-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 25%);
+}
+.executors-text {
+    background: #f0f0f0a6;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 25%);
+    border-radius: 0 0 8px 8px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 3;
+}
+.executors-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+.executors-price {
+    font-weight: 700;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.button-call, .button-more {
+    padding: 6px 15px;
+    display: flex;
+    align-items: center;
+    background: #577CA9;
+    border-radius: 8px;
+    color: white;
+}
+*/
+
+/* Фльтры и категории */
+/* .executors-categories {
+    display: none;
+    opacity: 0;
+    transition: .5s all;
+}
+.executors-categories.active {
+    display: block;
+}
+.executors-categories.visible {
+    opacity: 1;
+}
+
+
+
+.child-categories {
+    display: none;
+    opacity: 0;
+    transition: 0.5s all;
+} */
+/* popup */
+.popup-thanks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: none;
+    transition: .5s all;
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+.popup-thanks.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.popup-thanks.visible{
+    opacity: 1;
+}
+
+.test-main-block {
+    position: relative;
+}
+.test-title .my-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.test-text .my-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.test-title {
+    background: #fcd233e0;
+    /* border-radius: 5px; */
+    font-weight: 700;
+    font-size: 18px;
+}
+.test-title .my-container {
+    padding: 5px 10px;
+}
+.test-text .my-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 0.5px solid black;
+}
+.test-next-answer {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: .5s all;
+    padding: 10px;
+    font-family: 'Futura';
+}
+.test-next-answer.active{
+    left: 0;
+}
+.test-blockPosition{
+    position: relative;
+}
+.popup-btn {
+    padding: 5px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: darkgrey;
+    font-weight: 700;
+    color: white;
+}
+.test-text, .text-next-answer-continue, .text-next-answer-finish, .popup-btn{
+    cursor: pointer;
+}
+
+/* Сама фильтрация */
+label {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* = скрываем input */
+input {
+    display: none;
+}
+input[type="text"] {
+    margin-top: 12px;
+    display: block;
+	width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+/* = стилизуем кнопку, которая работает вместе с input */
+.stlradio {
+    display: inline-block;
+    border: 2px solid #b2b1b1;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-right: 4px;
+    border-radius: 300px;
+    background-color:#ffffff;
+}
+
+/* = делаем скрытую точку в нашем div */
+.stlradio:before {
+    content: '';
+    background: #1c1e25;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 300px;
+}
+
+/* = включаем точку если input активен */
+input:checked + .stlradio:before {
+    opacity: 1;
+}
+
+.text-next-answer-continue, .text-next-answer-finish {
+    margin: 15px auto;
+    padding: 8px 23px;
+    width: fit-content;
+    background: #fcd233;
+    border-radius: 8px;
+}
+.test-next-answer.active h3{
+    margin-top: 0;
+}
+/* CheckBox */
+/* = стилизуем кнопку, которая работает вместе с input */
+.stlchek {
+    display: inline-block;
+    border: 2px solid #b2b1b1;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-right: 4px;
+}
+/* = делаем скрытый квадратик в нашем div */
+.stlchek:before {
+    content: '';
+    background: #1c1e25;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+/* = включаем квадратик если input активен */
+input:checked + .stlchek:before {
+    opacity: 1;
+}
+
+/* textarea */
+textarea {
+	/* = Убираем скролл */
+	overflow: auto;
+
+	/* = Убираем увеличение */
+	resize: none;
+	width: 100%;
+	height: 200px;
+
+	/* = Добавим фон, рамку, отступ*/
+	background: #f6f6f6;
+	border: 1px solid #cecece;
+	border-radius: 8px 0 0 0;
+	padding: 8px 0 8px 10px;
+}
+.block-prices label{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.block-prices label input{
+    margin-top: 10px;
+}
+
+/* Special */
+span.q {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.test-text img {
+    height: 22px;
+}
+.label-input{
+    margin-top: 7px;
+}
+.label-input input{
+    margin-top: 0;
+}

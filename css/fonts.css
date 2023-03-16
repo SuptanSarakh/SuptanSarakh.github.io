@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Cantarell-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Cantarell-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Flix';
+    src:  url('../fonts/Flix-Normal.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Flix';
+    src: url('../fonts/Flix-Outline.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src:  url('../fonts/futuramdbtrusbyme_medium.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futuramdbtrusbyme_bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk';
+    src:  url('../fonts/Druk-Bold-Trial.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Druk';
+    src: url('../fonts/Druk-Medium-Trial.otf');
+    font-weight: 700;
+    font-style: normal;
+}
